@@ -69,7 +69,7 @@ the location of this file.
 <!--                </font>-->
 
                 <!-- register all the fonts found in a directory -->
-                <directory>D:\AnupProjects\fop-example\src\main\resources\fonts</directory>
+                <directory>/Users/manjitshakya/JavaApacheFOP-POC/src/main/resources/fonts</directory>
 
                 <!-- automatically detect operating system installed fonts -->
                 <auto-detect/>

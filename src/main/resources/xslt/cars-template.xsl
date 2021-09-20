@@ -55,11 +55,11 @@
         </fo:root>
     </xsl:template>
 
-
-    <xsl:template match="car">
+     <xsl:template match="car">
         <fo:table-row>
             <fo:table-cell>
                 <fo:block>
+                    <fo:basic-link external-destination="url('http://www.google.com')" color="blue" text-decoration="underline">TEST</fo:basic-link>
                     <xsl:value-of select="id"/>
                 </fo:block>
             </fo:table-cell>
