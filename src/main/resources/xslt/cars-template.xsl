@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:fo="http://www.w3.org/1999/XSL/Format" exclude-result-prefixes="fo">
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                xmlns:gsp='http://groovy.codehaus.org/2005/gsp'
+                exclude-result-prefixes="fo">
 
     <xsl:output method="xml" version="1.0" omit-xml-declaration="no" indent="yes"/>
     <xsl:param name="version" select="'1.0'"/>
@@ -59,7 +61,10 @@
         <fo:table-row>
             <fo:table-cell>
                 <fo:block>
-                    <fo:basic-link external-destination="url('http://www.google.com')" color="blue" text-decoration="underline">TEST</fo:basic-link>
+                    <gsp:scriptlet>
+
+                    </gsp:scriptlet>
+
                     <xsl:value-of select="id"/>
                 </fo:block>
             </fo:table-cell>
